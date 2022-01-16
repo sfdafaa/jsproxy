@@ -1,90 +1,168 @@
-<!DOCTYPE html>
-<html lang="zh-CN" class="fgpwmno idc0_330">
+<!doctype html>
+<html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="Cache-Control" content="no-siteapp">
-    <meta name="referrer" content="no-referrer">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="icon" href="./res/Google__G__Logo.svg">
-    <title>Google Search</title>
-    <link href="./res/style.css" rel="stylesheet">
-    <script src="./res/jquery.min.js"></script>
-    <script src="./res/iconfont.js"></script>
-    <script>
-        $(document).ready(function () {
-            //菜单点击
-            $("#menu").click(function (event) {
-                $(this).toggleClass('on');
-                $(".list").toggleClass('closed');
-            });
-            $("#content").click(function (event) {
-                $(".on").removeClass('on');
-                $(".list").addClass('closed');
-            });
-        });
-    </script>
-
+  <title>Page Sandbox</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+  <base target="_blank">
+  <style>
+    body {
+      padding: 0 0.5em;
+    }
+    .box {
+      margin-top: 1em;
+    }
+    #txtURL {
+      width: 100%;
+      height: 2em;
+      text-indent: 0.5em;
+      padding: 0.25em 0;
+    }
+    #btnGo {
+      width: 100%;
+      font-size: 1.5em;
+    }
+    #list a {
+      margin: 1em;
+    }
+  </style>
 </head>
 <body>
-<div id="menu" class=""><i></i></div>
-    <div class="list closed">
-        <ul>
-          <!------>
-            <li class="title"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-shipin"></use></svg> 视频媒体</li>
-            <li><a rel="nofollow" href="https://www.youtube.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-youtube"></use></svg> Youtube</a></li>
-            <li><a rel="nofollow" href="https://www.bilibili.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-bili"></use></svg>哔哩哔哩</a></li>
-            <li><a rel="nofollow" href="https://ddrk.me/" target="_blank"><svg class="icon" aria-hidden="true"></svg>低端影视</a></li>         
-            <!------>
-            <li class="title"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-kongzhitai"></use></svg> 开发</li>
-            <li><a rel="nofollow" href="https://github.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-github"></use></svg>Github</a></li>
-            <li><a rel="nofollow" href="https://dash.cloudflare.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cloudflare"></use></svg>Cloudflare</a></li>
-            <li><a rel="nofollow" href="https://cloud.tencent.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href=""></use></svg>腾讯云</a></li>
-            <li><a rel="nofollow" href="https://codepen.io/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-codepen"></use></svg>Codepen</a></li>
-            <li><a rel="nofollow" href="https://www.heroku.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#"></use></svg>HeroKu</a></li>
-            <li><a rel="nofollow" href="https://www.icourse163.org/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#"></use></svg>网易mooc</a></li>            
-            <!------>
-            <li class="title"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-youxiang"></use></svg> 邮箱</li>
-            <li><a rel="nofollow" href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-gmail"></use></svg>Gmail</a></li>
-            <li><a rel="nofollow" href="https://mail.qq.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-QQ"></use></svg>QQ邮箱</a></li>
-            <li><a rel="nofollow" href="http://mail.hnu.edu.cn/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href=""></use></svg>学校邮箱</a></li>
-            <li><a rel="nofollow" href="https://mail.yandex.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href=""></use></svg>Yandex</a></li>
-            <!------>
-            <li class="title"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-sousuo"></use></svg> 搜索引擎</li>
-            <li><a rel="nofollow" href="https://www.google.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-google"></use></svg>Google</a></li>
-            <li><a rel="nofollow" href="https://web.chan.im/-----https://duckduckgo.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-duck"></use></svg>DuckGo</a></li>
-            <li><a rel="nofollow" href="https://web.chan.im/-----https://www.startpage.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-sousuo"></use></svg>Startpage</a></li>
-            <!------>
-            <li class="title"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-ai-tool"></use></svg> 工具</li>
-            <li><a rel="nofollow" href="https://tools.miku.ac/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-ai-tool"></use></svg>Miku工具</a></li>
-            <li><a rel="nofollow" href="https://ip.sb/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-wangluo"></use></svg>IP查询</a></li>
-            <li><a rel="nofollow" href="http://www.slimego.cn/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-shilaimu"></use></svg>史莱姆</a></li>
-            <li><a rel="nofollow" href="https://www.base64decode.org/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-base64"></use></svg>Base64</a></li>
-            <li><a rel="nofollow" href="https://ping.pe" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-wangluo1"></use></svg>Ping.pe</a></li>
-            <li><a rel="nofollow" href="https://ping.chinaz.com/" target="_blank"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-pingup"></use></svg>站长Ping</a></li>
-            <!------>
-            <li class="title"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-msg"></use></svg> 社交资讯</li>
-            <!------>
-            <li class="title"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-sheji"></use></svg> 设计视觉</li>    
-        </ul>
-    </div>
+  <div class="box">
+    <input id="txtURL" type="text" value="www.google.com" autofocus>
+  </div>
+  <div class="box">
+    <button id="btnGo">Go</button>
+  </div>
+  <div class="box">
+    <span>切换线路:</span>
+    <select id="selNode"></select>
+  </div>
+  <div class="box" id="list">
+  </div>
+  <script>
+    const PAGE_CONF_SET = 110
+    const PAGE_CONF_GET = 111
 
-<div id="content">
-    <div class="con">
-        <div class="shlogo" style="background: url(icon/logo3.svg) no-repeat center/cover;"></div>
-        <div class="sou">
-            <form action="https://www.google.com/search" method="get" target="_self">
-                <div class="lg" style="background: url(./res/Google__G__Logo.svg) no-repeat center/cover;"></div>
-                <input class="wd" type="text" placeholder="请输入搜索内容" name="q" x-webkit-speech="" lang="zh-CN"
-                       autocomplete="off">
-                <button>
-                    <svg class="icon" style=" width: 21px; height: 21px; opacity: 0.5;" aria-hidden="true">
-                        <use xlink:href="#icon-sousuo"></use>
-                    </svg>
-                </button>
-            </form>
-        </div>
-    </div>
-</div>
+    const SW_CONF_RETURN = 112
+    const SW_CONF_CHANGE = 113
+
+    const PAGE_READY_CHECK = 200
+    const SW_READY = 201
+
+    const sw = navigator.serviceWorker
+
+
+    sw.addEventListener('message', onSwMsg)
+    sendMsgToSw(PAGE_READY_CHECK)
+
+    btnGo.onclick = function() {
+      const text = txtURL.value.trim()
+      if (text) {
+        const url = './-----' + text
+        open(url, '_blank', 'noopener,noreferrer')
+      }
+    }
+    txtURL.onkeypress = function(e) {
+      if (e.keyCode === 13) {
+        btnGo.onclick()
+      }
+    }
+    txtURL.setSelectionRange(0, txtURL.value.length)
+
+
+    function onSwMsg(e) {
+      const [cmd, msg] = e.data
+
+      switch (cmd) {
+      case SW_CONF_RETURN:
+        conf = msg
+        showConf()
+        break
+
+      case SW_CONF_CHANGE:
+        conf = msg
+        updateSelected()
+        break
+
+      case SW_READY:
+        console.log('sw ready')
+        showIcons()
+        sendMsgToSw(PAGE_CONF_GET)
+        break
+      }
+    }
+
+    function onSwFail(err) {
+      txtURL.value = err
+    }
+
+    selNode.onchange = function() {
+      const item = this.options[this.selectedIndex]
+      const node = item.value
+      conf.node_default = node
+      sendMsgToSw(PAGE_CONF_SET, conf)
+    }
+
+    function sendMsgToSw(cmd, val) {
+      const ctl = sw.controller
+      if (!ctl) {
+        console.log('ctl is null')
+        return
+      }
+      ctl.postMessage([cmd, val])
+    }
+
+    const SITE_LIST = [
+      ['google', ''],
+      ['youtube', ''],
+      ['twitter', 'twitter.com/google'],
+      ['flickr', ''],
+      ['quora', 'www.quora.com/topic/JavaScript-programming-language'],
+      ['twitch', 'www.twitch.tv/'],
+      ['reddit', ''],
+      ['wiki', 'zh.wikipedia.org/'],
+      ['gist', 'gist.github.com/'],
+      ['facebook', 'facebook.com/Google/'],
+      ['blogger', ''],
+    ]
+
+    function showIcons() {
+      list.innerHTML = SITE_LIST.map(v => {
+        let [id, url] = v
+        url = url || `www.${id}.com/`
+        return `\
+<a rel="noopener noreferrer" href=./-----https://${url}>\
+<img width=128 height=128 src=__sys__/assets/ico/${id}.png></a>`
+      }).join('')
+    }
+
+    function addNodeItem(id, text) {
+      const optEl = document.createElement('option')
+      optEl.id = '--' + id
+      optEl.text = text
+      optEl.value = id
+      selNode.appendChild(optEl)
+    }
+
+    function updateSelected() {
+      const id = conf.node_default
+      const item = document.getElementById('--' + id)
+      if (item) {
+        item.selected = true
+      } else {
+        console.warn('unknown node:', id)
+      }
+    }
+
+    function showConf() {
+      for (const [id, node] of Object.entries(conf.node_map)) {
+        if (!node.hidden) {
+          addNodeItem(id, node.label)
+        }
+      }
+      updateSelected()
+    }
+  </script>
 </body>
 </html>
