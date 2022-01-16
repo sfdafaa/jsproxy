@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>Page Sandbox</title>
+  <title>Web Proxy</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
   <base target="_blank">
@@ -29,7 +29,7 @@
 </head>
 <body>
   <div class="box">
-    <input id="txtURL" type="text" value="www.google.com" autofocus>
+    <input id="txtURL" type="text" value="www.startpage.com" autofocus>
   </div>
   <div class="box">
     <button id="btnGo">Go</button>
@@ -113,19 +113,7 @@
       ctl.postMessage([cmd, val])
     }
 
-    const SITE_LIST = [
-      ['google', ''],
-      ['youtube', ''],
-      ['twitter', 'twitter.com/google'],
-      ['flickr', ''],
-      ['quora', 'www.quora.com/topic/JavaScript-programming-language'],
-      ['twitch', 'www.twitch.tv/'],
-      ['reddit', ''],
-      ['wiki', 'zh.wikipedia.org/'],
-      ['gist', 'gist.github.com/'],
-      ['facebook', 'facebook.com/Google/'],
-      ['blogger', ''],
-    ]
+    const SITE_LIST = [ ]
 
     function showIcons() {
       list.innerHTML = SITE_LIST.map(v => {
